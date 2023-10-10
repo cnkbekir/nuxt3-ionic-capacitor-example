@@ -1,34 +1,22 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 - Ionic - Capacitor
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction)
+[Nuxt 3 Ionic Module](https://ionic.nuxtjs.org/)
+[Newrelic Capacitor Plugin](https://github.com/newrelic/newrelic-capacitor-plugin)
 
 ## Setup
 
-Make sure to install the dependencies:
-
 ```bash
-# npm
 npm install
+
+cp .env.example .env.local
 ```
 
-## Development Server
+## Android test
 
-Start the development server on `http://localhost:3000`:
+Run the application for android test:
 
 ```bash
 # npm
-npm run dev
+npm run prepare-deploy
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-```
-
-
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
