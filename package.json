@@ -3,14 +3,14 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
+    "build": "nuxt build --dotenv .env.local",
+    "dev": "nuxt dev --dotenv .env.local",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "ionic:build": "npm run build",
     "ionic:serve": "npm run dev",
-    "prepare-deploy": "nuxt generate && npx cap sync && npx cap open"
+    "prepare-deploy": "nuxt generate --dotenv .env.local && npx cap sync && npx cap open"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",

@@ -5,7 +5,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   runtimeConfig: {
     public: {
-      newrelicToken: '',
+      newrelicAndroidToken: '',
+      newrelicIosToken: '',
     },
+  },
+  experimental: {
+    payloadExtraction: false,
   },
 })
