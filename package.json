@@ -9,7 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "ionic:build": "npm run build",
-    "ionic:serve": "npm run dev"
+    "ionic:serve": "npm run dev",
+    "prepare-deploy": "nuxt generate && npx cap sync && npx cap open"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -26,7 +27,8 @@
     "@capacitor/haptics": "5.0.6",
     "@capacitor/ios": "5.4.2",
     "@capacitor/keyboard": "5.0.6",
-    "@capacitor/status-bar": "5.0.6"
+    "@capacitor/status-bar": "5.0.6",
+    "@newrelic/newrelic-capacitor-plugin": "^1.3.1"
   },
   "version": "0.0.0"
 }

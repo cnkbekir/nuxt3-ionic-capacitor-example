@@ -2,5 +2,10 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/ionic'],
   ssr: false,
-  devtools: { enabled: true }
+  devtools: { enabled: true },
+  runtimeConfig: {
+    public: {
+      newrelicToken: '',
+    },
+  },
 })
